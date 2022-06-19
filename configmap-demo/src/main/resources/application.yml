@@ -1,0 +1,12 @@
+application:
+ name: configmap-demo
+ logging:
+  level: INFO
+management:
+ endpoint:
+   restart:
+     enabled: true
+ endpoints:
+   web:
+     exposure:
+       include: restart

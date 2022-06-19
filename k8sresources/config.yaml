@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: hot-config
+data:
+  config.properties: |
+    retry.enabled=false
+    maxRetry=5
+    timeout=5000

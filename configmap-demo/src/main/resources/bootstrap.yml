@@ -1,0 +1,11 @@
+spring:
+  cloud:
+    kubernetes:
+      reload:
+        enabled: true
+        strategy: restart_context
+      config:
+        enabled: true
+        sources:
+          - namespace: default
+            name: hot-config
